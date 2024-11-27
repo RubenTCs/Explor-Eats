@@ -12,7 +12,7 @@ export default defineConfig({
   },
   server: {
     proxy: {
-      '/api': 'process.env.VITE_API_BASE_URL',
+      '/api': 'http://localhost:3000',
     },
   },
 })
