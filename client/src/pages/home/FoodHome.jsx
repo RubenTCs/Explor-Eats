@@ -35,7 +35,7 @@ function FoodHome() {
   return (
     <div 
     style={{'--image-url': `url(${borderBrown})`}}
-    className="flex flex-col h-fit items-center bg-primaryColor bg-no-repeat gap-[3.125rem] bg-[image:var(--image-url)] bg-[length:95%] bg-center pt-[4.375rem] pb-[3.125rem] px-[10rem]">
+    className="flex flex-col h-fit items-center bg-primaryColor bg-no-repeat gap-[3.125rem] bg-[image:var(--image-url)] bg-[length:100%] bg-center pt-[4.375rem] pb-[3.125rem] px-[10rem]">
       <div className="flex flex-col gap-[1.125rem] items-center overflow-x-hidden">
         <hr className="border-t-8 border-secondaryColor w-full rounded-full" />
         <h1 className="text-secondaryColor font-bold text-[4rem]">THE FOODS</h1>
