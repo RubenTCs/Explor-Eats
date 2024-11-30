@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import CheHunTiau from '@/assets/images/CheHunTiau.jpg';
 import SingkawangCover from '@/assets/images/SingkawangCover.png';
 import PontianakCover from '@/assets/images/PontianakCover.jpg';
+import borderWhite from '@/assets/images/border-white.png';
 import axios from 'axios';
 
 function PlaceHome() {
@@ -24,7 +25,10 @@ function PlaceHome() {
   }, []);
 
   return (
-    <div className='flex flex-col h-fit items-center bg-secondaryColor gap-[3.125rem] pt-[4.375rem] pb-[3.125rem] px-[15rem]'>
+    <div 
+    style={{'--image-url': `url(${borderWhite})`}}
+    className='flex flex-col h-fit items-center bg-secondaryColor bg-no-repeat bg-[image:var(--image-url)] bg-[length:95%] bg-center gap-[3.125rem] pt-[4.375rem] pb-[3.125rem] px-[15rem]'>
+      
       <div className='flex flex-col gap-[1.125rem] items-center'>
         <hr className='border-t-8 border-primaryColor w-full rounded-full' />
         <h1 className='text-primaryColor font-bold text-[4rem]'>THE PLACES</h1>
